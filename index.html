@@ -16,7 +16,7 @@
 
     <div class="container-fluid barradenavegacion">
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 rounded-top" id="barraDeNavegaciónSuperior">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mt-3 rounded-top" id="barraDeNavegaciónSuperior">
 
             <div class="container-fluid">
 
@@ -36,27 +36,34 @@
         </nav>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-bottom" id="barraDeNavegaciónInferior">
+                        
+            <div class="container-fluid" >
 
-            <div class="container-fluid">
-                <div class="navbar-collapse collapse">
-                    <a class="navbar-brand" href="#"> <img src="./images/—Pngtree—flower logo_6030987.png" alt="" style="width: 3rem; height: 3rem;"> Ziur</a>
+                <a class="navbar-brand" href="#"> <img src="./images/—Pngtree—flower logo_6030987.png" alt="" style="width: 3rem; height: 3rem;"> Ziur</a>
+                <!-- Boton para el colapso de la barra -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse" id="colapsoBarraNavegacion">
+                    
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-light border-0 botonNavegacion" href="#">
+                            <button type="button" class="btn btn-outline-light border-0 rounded-0 botonNavegacion" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
                                 <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                                 </svg> Home
                             </button></li>
                         <li class="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-light nav-item border-0 botonNavegacion" href="#">
+                            <button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonNavegacion" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
                                 </svg> About
                             </button>
                         </li>
                         <li class="nav-item mx-2 dropdown">
-                            <button type="button" class="btn btn-outline-light nav-item border-0 botonNavegacion" id="menuUno" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonNavegacion" id="menuUno" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                                 <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
                                 </svg> Services
@@ -65,14 +72,14 @@
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuUno">
                                 <li><a class="dropdown-item" href="#">Watching new movies</a></li>
                                 <li class="dropdwon dropend">
-                                    <a class="dropdown-item dropdown-toggle" id="subMenuDos" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="outside">Listening</a>                               
+                                    <a class="dropdown-item dropdown-toggle" id="subMenuDos" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Listening music</a>                               
                                     <!-- Submenú segundo -->
                                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="subMenuDos">
                                         <li><a class="dropdown-item" href="#">Sub item 01</a></li>
                                         <li><a class="dropdown-item" href="#">Sub item 02</a></li>
                                         <li><a class="dropdown-item" href="#">Sub item 03</a></li>
                                         <li><a class="dropdown-item" href="#">Sub item 04</a></li>
-                                        <li class="dropdwon dropend"><a class="dropdown-item dropdown-toggle" href="#" id="subMenuTres" href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" data-bs-offset="80,80">Sub item 05</a>
+                                        <li class="dropdwon"><a class="dropdown-item dropdown-toggle" href="#" id="subMenuTres" href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" data-bs-offset="80,80">Sub item 05</a>
                                         <!-- Submenú tercero -->
                                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="subMenuTres" id="subMenuTresB">
                                                 <li><a class="dropdown-item prueba1" href="#">Sub item 01</a></li>
@@ -90,7 +97,7 @@
                         </li>
                         
                         <li class="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-light nav-item border-0 botonNavegacion" href="#">
+                            <button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonNavegacion" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                                 <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
                                 <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
@@ -98,40 +105,40 @@
                             </button>
                         </li>
                         <li class="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-light nav-item border-0 botonNavegacion" href="#">
+                            <button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonNavegacion" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
                                 <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
                                 </svg> Contact
                             </button>
                         </li>
                         <li class="nav-item mx-2">
-                            <button type="button" class="btn btn-outline-light nav-item border-0 botonNavegacion" href="#">Mega</button>
+                            <button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonNavegacion" href="#">Mega</button>
                         </li>
                     </ul>
-
+                    <!-- Campo de busqueda -->
                     <form class="d-flex" action="">
                         <div class="input-group">
-                            <input class="form-control" placeholder="search here..." type="text">
+                            <input class="form-control border-0" placeholder="search here..." type="text">
                             <button class="btn btn-link bg-light" type="button" id="inputGroupFileAddon03"><img src="./images/iconLupa.png" alt=""></button>
                         </div>
                     </form>
                     <!-- Redes Sociales -->
                     <ul class="navbar-nav">
-                        <li class="nav-item mx-1"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <li class="nav-item mx-1"><button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonRedes" href="#"><svg class="iconsRedes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                          </svg></a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                          </svg></button></li>
+                        <li class="nav-item mx-1"><button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonRedes" href="#"><svg class="iconsRedes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                          </svg></a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                          </svg></button></li>
+                        <li class="nav-item mx-1"><button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonRedes" href="#"><svg class="iconsRedes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
                             <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                          </svg></a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 30 30">
+                          </svg></button></li>
+                        <li class="nav-item mx-1"><button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonRedes" href="#"><svg class="iconsRedes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 30 30">
                             <path d="M 7.4140625 3 L 9.1894531 9.4121094 L 9.1894531 12.488281 L 10.726562 12.488281 L 10.726562 9.4121094 L 12.525391 3 L 10.976562 3 L 10.332031 5.9179688 C 10.151031 6.7699687 10.035422 7.3753281 9.9824219 7.7363281 L 9.9355469 7.7363281 C 9.8605469 7.2313281 9.7439375 6.62125 9.5859375 5.90625 L 8.9648438 3 L 7.4140625 3 z M 14.318359 5.4199219 C 13.797359 5.4199219 13.376641 5.5224687 13.056641 5.7304688 C 12.735641 5.9374688 12.500609 6.2687031 12.349609 6.7207031 C 12.199609 7.1737031 12.123047 7.7715781 12.123047 8.5175781 L 12.123047 9.5234375 C 12.123047 10.261437 12.190266 10.853828 12.322266 11.298828 C 12.454266 11.743828 12.675281 12.072203 12.988281 12.283203 C 13.301281 12.494203 13.733203 12.600562 14.283203 12.601562 C 14.818203 12.601562 15.244641 12.497063 15.556641 12.289062 C 15.868641 12.081063 16.095375 11.755641 16.234375 11.306641 C 16.373375 10.857641 16.443359 10.264391 16.443359 9.5253906 L 16.443359 8.5175781 C 16.443359 7.7715781 16.371516 7.1755625 16.228516 6.7265625 C 16.085516 6.2785625 15.860781 5.9473281 15.550781 5.7363281 C 15.241781 5.5253281 14.830359 5.4199219 14.318359 5.4199219 z M 17.251953 5.5566406 L 17.251953 10.734375 C 17.251953 11.375375 17.362078 11.847437 17.580078 12.148438 C 17.799078 12.449437 18.137656 12.599609 18.597656 12.599609 C 19.260656 12.599609 19.758844 12.279672 20.089844 11.638672 L 20.123047 11.638672 L 20.259766 12.486328 L 21.480469 12.486328 L 21.480469 5.5566406 L 19.921875 5.5566406 L 19.921875 11.060547 C 19.861875 11.189547 19.769531 11.295906 19.644531 11.378906 C 19.519531 11.462906 19.389906 11.503906 19.253906 11.503906 C 19.094906 11.503906 18.982063 11.436687 18.914062 11.304688 C 18.846063 11.172688 18.8125 10.954531 18.8125 10.644531 L 18.8125 5.5566406 L 17.251953 5.5566406 z M 14.283203 6.4941406 C 14.501203 6.4941406 14.656187 6.6098437 14.742188 6.8398438 C 14.829188 7.0688437 14.871094 7.4316875 14.871094 7.9296875 L 14.871094 10.089844 C 14.871094 10.602844 14.828188 10.971266 14.742188 11.197266 C 14.656188 11.423266 14.502156 11.536109 14.285156 11.537109 C 14.067156 11.537109 13.915031 11.423266 13.832031 11.197266 C 13.748031 10.971266 13.707031 10.601844 13.707031 10.089844 L 13.707031 7.9296875 C 13.707031 7.4326875 13.751891 7.0698438 13.837891 6.8398438 C 13.923891 6.6108438 14.072203 6.4941406 14.283203 6.4941406 z M 6.5 13.900391 C 5.119 13.900391 4 15.019391 4 16.400391 L 4 24.400391 C 4 25.781391 5.119 26.900391 6.5 26.900391 L 23.5 26.900391 C 24.881 26.900391 26 25.781391 26 24.400391 L 26 16.400391 C 26 15.019391 24.881 13.900391 23.5 13.900391 L 6.5 13.900391 z M 15.058594 16.199219 L 16.328125 16.199219 L 16.328125 19.283203 L 16.337891 19.283203 C 16.451891 19.060203 16.614219 18.881141 16.824219 18.744141 C 17.034219 18.607141 17.261906 18.539062 17.503906 18.539062 C 17.815906 18.539062 18.059328 18.622109 18.236328 18.787109 C 18.413328 18.952109 18.544047 19.220844 18.623047 19.589844 C 18.702047 19.959844 18.742188 20.471953 18.742188 21.126953 L 18.742188 22.050781 C 18.742188 22.922781 18.637734 23.563609 18.427734 23.974609 C 18.217734 24.385609 17.888359 24.591797 17.443359 24.591797 C 17.195359 24.591797 16.969625 24.533922 16.765625 24.419922 C 16.561625 24.305922 16.410594 24.149172 16.308594 23.951172 L 16.279297 23.951172 L 16.146484 24.503906 L 15.058594 24.503906 L 15.058594 16.199219 z M 7.1835938 16.496094 L 11.087891 16.496094 L 11.087891 17.556641 L 9.7792969 17.556641 L 9.7792969 24.503906 L 8.4902344 24.503906 L 8.4902344 17.556641 L 7.1835938 17.556641 L 7.1835938 16.496094 z M 21.117188 18.542969 C 21.568188 18.542969 21.916203 18.624062 22.158203 18.789062 C 22.399203 18.955063 22.570922 19.2135 22.669922 19.5625 C 22.767922 19.9125 22.816406 20.396672 22.816406 21.013672 L 22.816406 22.017578 L 20.613281 22.017578 L 20.613281 22.314453 C 20.613281 22.690453 20.623484 22.971203 20.646484 23.158203 C 20.669484 23.345203 20.715156 23.483359 20.785156 23.568359 C 20.855156 23.654359 20.963375 23.697266 21.109375 23.697266 C 21.306375 23.697266 21.441625 23.62075 21.515625 23.46875 C 21.588625 23.31675 21.628766 23.061078 21.634766 22.705078 L 22.769531 22.771484 C 22.775531 22.821484 22.779297 22.893422 22.779297 22.982422 C 22.779297 23.523422 22.631937 23.927359 22.335938 24.193359 C 22.039938 24.461359 21.621078 24.595703 21.080078 24.595703 C 20.431078 24.595703 19.976844 24.391375 19.714844 23.984375 C 19.452844 23.577375 19.324219 22.94675 19.324219 22.09375 L 19.324219 21.072266 C 19.324219 20.194266 19.460469 19.553438 19.730469 19.148438 C 20.000469 18.743437 20.462188 18.542969 21.117188 18.542969 z M 12.949219 18.650391 L 14.267578 18.650391 L 14.267578 24.501953 L 14.263672 24.501953 L 14.263672 24.503906 L 13.232422 24.503906 L 13.119141 23.787109 L 13.089844 23.787109 C 12.809844 24.329109 12.390078 24.599609 11.830078 24.599609 C 11.441078 24.599609 11.155703 24.47375 10.970703 24.21875 C 10.785703 23.96475 10.693359 23.565391 10.693359 23.025391 L 10.693359 18.652344 L 12.013672 18.652344 L 12.013672 22.949219 C 12.013672 23.209219 12.042609 23.397813 12.099609 23.507812 C 12.157609 23.619812 12.251719 23.673828 12.386719 23.673828 C 12.500719 23.673828 12.609844 23.639359 12.714844 23.568359 C 12.820844 23.498359 12.897219 23.408781 12.949219 23.300781 L 12.949219 18.650391 z M 21.089844 19.431641 C 20.949844 19.431641 20.844344 19.472687 20.777344 19.554688 C 20.710344 19.637687 20.665531 19.772938 20.644531 19.960938 C 20.621531 20.147938 20.611328 20.433453 20.611328 20.814453 L 20.611328 21.234375 L 21.574219 21.234375 L 21.574219 20.814453 C 21.574219 20.438453 21.562109 20.154937 21.537109 19.960938 C 21.512109 19.765937 21.467391 19.630781 21.400391 19.550781 C 21.333391 19.471781 21.230844 19.431641 21.089844 19.431641 z M 16.910156 19.474609 C 16.783156 19.474609 16.664641 19.524953 16.556641 19.626953 C 16.448641 19.728953 16.372125 19.859578 16.328125 20.017578 L 16.328125 23.339844 C 16.386125 23.441844 16.460734 23.517359 16.552734 23.568359 C 16.644734 23.618359 16.744516 23.646484 16.853516 23.646484 C 16.993516 23.646484 17.1045 23.596141 17.1875 23.494141 C 17.2705 23.392141 17.329281 23.220516 17.363281 22.978516 C 17.398281 22.737516 17.416016 22.402562 17.416016 21.976562 L 17.416016 21.222656 C 17.416016 20.764656 17.402047 20.411109 17.373047 20.162109 C 17.345047 19.914109 17.292703 19.736812 17.220703 19.632812 C 17.147703 19.528813 17.045156 19.474609 16.910156 19.474609 z"></path>
-                            </svg></a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            </svg></button></li>
+                        <li class="nav-item mx-1"><button type="button" class="btn btn-outline-light nav-item border-0 rounded-0 botonRedes" href="#"><svg class="iconsRedes" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                          </svg></a></li>
+                          </svg></button></li>
                     </ul>
 
                 </div>

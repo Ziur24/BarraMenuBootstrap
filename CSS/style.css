@@ -15,9 +15,16 @@ svg{
 }
 .botonNavegacion{
 height: 3.56rem;
-border-radius: 0;
 border-style: solid;
 margin-right: -1rem;
+}
+.botonRedes{
+    height: 3.56rem;
+    margin-right: -0.3rem;
+}
+.iconsRedes{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 #barraDeNavegaciónInferior{
